@@ -1,0 +1,29 @@
+service: test-deploy
+
+runtime: nodejs18
+instance_class: F2
+
+env_variables:
+  HOST: "0.0.0.0"
+  # PUBLIC_URL: 'https://xxxxx.nw.r.appspot.com/strapi'
+  NODE_ENV: "production"
+  DATABASE_CLIENT: "postgres"
+  DATABASE_HOST: "34.101.116.235"
+  DATABASE_NAME: "postgres"
+  DATABASE_USERNAME: "alif"
+  DATABASE_PASSWORD: "root"
+  DATABASE_SSL: "false"
+  APP_KEYS: "7lX6SZ0qysq6BfF4f+cQcQ==,xiMEROXeiRVShv3/Vaxldw==,bwwW4qYNHF+6B3fH2PW62Q==,cszLGdcnj3ClMs8h/qjQ9Q=="
+  API_TOKEN_SALT: "Fh2yeEJygs0TJKdP+K/IAA=="
+  ADMIN_JWT_SECRET: "CocD4t1ADftjyOk3w8LuwQ=="
+  TRANSFER_TOKEN_SALT: "3Tinaki1UQkfGxJv3lnsdg=="
+  JWT_SECRET: "WVoPEq9HUEEXbXeTb4XTKQ=="
+
+build_env_variables:
+  NODE_ENV: "production"
+  # PUBLIC_URL: 'https://xxxxx.nw.r.appspot.com/api'
+  APP_KEYS: "7lX6SZ0qysq6BfF4f+cQcQ==,xiMEROXeiRVShv3/Vaxldw==,bwwW4qYNHF+6B3fH2PW62Q==,cszLGdcnj3ClMs8h/qjQ9Q=="
+  API_TOKEN_SALT: "Fh2yeEJygs0TJKdP+K/IAA=="
+  ADMIN_JWT_SECRET: "CocD4t1ADftjyOk3w8LuwQ=="
+  TRANSFER_TOKEN_SALT: "3Tinaki1UQkfGxJv3lnsdg=="
+  JWT_SECRET: "WVoPEq9HUEEXbXeTb4XTKQ=="
